@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	font-family: helvetica;
+	box-sizing: border-box;
+}
+#weatherApp {
+	text-align: center;
+	width: 1000px;
+	height: 500px;
+	display: block;
+	margin: 0 auto;
+	.info-container {
+		display: block;
+		div {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.degrees {
+			font-size: 2em;
+			font-weight: bold;
+
+		}
+	}
+	.sub-info {
+		> div {
+			padding: 30px 20px;
+			background: rgba(255,255,255,.5);
+			border-radius: 4px;
+			box-shadow: 2px 2px 7px 0px black;
+			.weatherData {
+				font-size: 1.2em;
+				font-weight: bold;
+				margin: auto;
+			}
+		}
+	}
+	.sysToggle {
+		background: rgba(255,255,255, .5);
+
+		border: none;
+		box-shadow: 2px 2px 7px 0px black;
+		padding: 10px 10px;
+		margin: 15px;
+		bottom: 25px;
+		left: 25px;
+		position: absolute;
+		transition: .3s;
+		border-radius: 4px;
+		&:hover {
+			cursor: pointer;
+			background: rgba(255,255,255,.8);
+
+		}
+
+	}
+}
