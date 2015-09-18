@@ -41,7 +41,7 @@ $(document).ready(function() {
                 weatherDirection.append('<p class="weatherData">' + windDirection(deg) + '</p>').hide().fadeIn();
                 //set background image
                 function setBackground() {
-                    switch(currentTemp) {
+                    switch(true) {
                         case currentTemp <= 35:
                             backgroundImage = "cold.jpeg";
                             break;
@@ -54,6 +54,7 @@ $(document).ready(function() {
                         default:
                             backgroundImage = "medium.jpeg";
                     }
+
                     $('body').css({'background': 'url(img/bkg/' + backgroundImage});
                 } setBackground();
 
